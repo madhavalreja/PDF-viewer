@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
 import { Document, Page } from 'react-pdf';
 
-const socket = io('http://localhost:5000');
+const socket = io('https://github.com/madhavalreja/PDF-viewer/backend.vercel.app');
+
 
 const App = () => {
     const [pageNumber, setPageNumber] = useState(1);
